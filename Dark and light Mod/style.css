@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.toggle{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+
+.toggle i{
+    width: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.toggle .ball{
+    position:  absolute;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin: 7.5px;
+
+}
+
+/* -----light mod-------- */
+.light{
+    background: #fafafa;
+}
+
+.light .toggle{
+    background: linear-gradient(145deg, #e1e1e1, #ffffff);
+    box-shadow: 3px 3px 4px #e6e6e6,-3px -3px 4px #ffffff;
+
+}
+
+.toggle .fa-sun{
+    color: #fafafa;
+}
+
+.toggle .fa-moon{
+    color: #151d2a;
+}
+
+.light .toggle .ball{
+    background:black;
+}
+
+
+/* -----Dark mod-------- */
+
+.dark{
+    background: #151d2a;
+}
+
+.dark .toggle{
+    background:#151d2a ;
+    box-shadow: 3px 3px 3px #0e131b,-3px -3px 3px #1c1739;
+
+}
+
+.dark .toggle .fa-sun{
+    color: #fafafa;
+}
+
+.dark .toggle .fa-moon{
+    color: #151d2a;
+}
+
+.dark .toggle .ball{
+    background: #fafafa;
+    transform: translate(60px);
+}
