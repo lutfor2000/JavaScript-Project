@@ -30,6 +30,7 @@ body{
     text-align: center;
     font-size: 25px;
     z-index: 1;
+    color: #0e131b;
 }
 
 .toggle .ball{
@@ -39,6 +40,9 @@ body{
     border-radius: 50%;
     margin: 7.5px;
 
+}
+input{
+    display: none;
 }
 
 /* -----light mod-------- */
@@ -52,16 +56,16 @@ body{
 
 }
 
-.toggle .fa-sun{
+.light .toggle .bxs-sun{
     color: #fafafa;
 }
 
-.toggle .fa-moon{
+.light .toggle .bx-moon{
     color: #151d2a;
 }
 
 .light .toggle .ball{
-    background:black;
+    background:#151d2a;
 }
 
 
@@ -69,23 +73,30 @@ body{
 
 .dark{
     background: #151d2a;
+    color: white;
 }
 
 .dark .toggle{
     background:#151d2a ;
-    box-shadow: 3px 3px 3px #0e131b,-3px -3px 3px #1c1739;
-
+    box-shadow: 3px 3px 3px #0e131b,-3px -3px 3px #0e131b;
 }
 
-.dark .toggle .fa-sun{
+.dark .toggle .bx-sun{
     color: #fafafa;
 }
 
-.dark .toggle .fa-moon{
+
+.dark .toggle .bxs-moon{
     color: #151d2a;
 }
 
+/* .dark .toggle .bx-moon{
+    color: #151d2a;
+} */
+
+
+
 .dark .toggle .ball{
     background: #fafafa;
-    transform: translate(60px);
+    transform: translateX(60px);
 }
