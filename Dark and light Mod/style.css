@@ -81,20 +81,6 @@ input{
     box-shadow: 3px 3px 3px #0e131b,-3px -3px 3px #0e131b;
 }
 
-.dark .toggle .bx-sun{
-    color: #fafafa;
-}
-
-
-.dark .toggle .bxs-moon{
-    color: #151d2a;
-}
-
-/* .dark .toggle .bx-moon{
-    color: #151d2a;
-} */
-
-
 
 .dark .toggle .ball{
     background: #fafafa;

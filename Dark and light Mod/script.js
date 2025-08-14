@@ -3,16 +3,16 @@ const toggle = document.querySelector("#toggle");
 const sunIcon = document.querySelector(".toggle .bxs-sun");
 const moonIcon = document.querySelector(".toggle .bx-moon");
 
-// প্রথমবার লোড হলে localStorage থেকে থিম চেক করো
+// first load localStorage change theme
 if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark");
     toggle.checked = true;
 }
 
-// টগল ক্লিক করলে থিম পরিবর্তন
+// toggle click change theme
 toggle.addEventListener("change", () => {
     body.classList.toggle("dark");
     
-    // থিম সেভ করো
+    // Save theme
     localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
 });
