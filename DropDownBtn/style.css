@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main_div{
+    max-width: 400px;
+    padding: 40px;
+    /* background: #817c7c; */
+    margin: 100px auto;
+    text-align: center;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#btn{
+    padding: 20px 40px;
+    margin-bottom: 30px;
+    border: none;
+    background: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    margin-top: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    display: none;
+}
+
+.dropdown_block{
+    display: block;
+}
