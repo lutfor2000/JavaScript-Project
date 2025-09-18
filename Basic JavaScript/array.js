@@ -14,8 +14,9 @@ const numList = [1,2,3,4,5,6];
 // const mapFunction = countryArray.map(Text => Text);
 // console.log(mapFunction)
 
-const mapFunction = countryArray.map(text => text.toUpperCase());
-console.log(mapFunction);
+// const mapFunction = countryArray.map(text => text.toUpperCase());
+// console.log(mapFunction);
 
-const useMap = numList.map(num => num + num);
-console.log(useMap)
+// const useMap = numList.map(num => num + num);
+// console.log(useMap)
+

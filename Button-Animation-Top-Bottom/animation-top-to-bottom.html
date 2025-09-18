@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: #f8f9fa;
+    }
+
+    :root{
+    --black-text--: #212025;
+    /* --p-color---:#212025; */
+    --btn-color--: #FF5600;
+    ---white-color-: #ffff;
+    }
+
+    .menuBtn{
+    position: relative;
+    padding: 20px 60px;
+    border: 1px solid var(--btn-color--);
+    background: none;
+    border-radius: 5px;
+    transition:all 0.3s ease;
+    overflow: hidden;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    z-index: 1;
+    cursor: pointer;
+
+    }
+
+    .menuBtn::after{
+    content: "";
+    position: absolute;
+    top:-100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--btn-color--);
+    transition: top 0.4s ease;
+    z-index: -1;
+    color: var(---white-color-);
+    }
+
+    .menuBtn:hover::after{
+    top: 0;
+    color: var(---white-color-);
+    }
+
+    .menuBtn:hover{
+    color: var(---white-color-);
+
+    }
+/* ===============header par End============== */
+    </style>
+</head>
+
+<body>
+    <div class="btn-area">
+         <button class="menuBtn">Order Online</button>
+    </div>
+</body>
+
+</html>
